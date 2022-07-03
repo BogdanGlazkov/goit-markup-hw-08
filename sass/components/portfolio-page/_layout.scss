@@ -1,0 +1,14 @@
+.portfolio-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-hidden {
+    display: none;
+}
+
+.portfolio-project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

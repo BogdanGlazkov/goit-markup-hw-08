@@ -1,0 +1,32 @@
+.auth-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color var(--transition);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+    }
+}
+
+.auth-nav a+a {
+ margin-left: 30px;
+}
+
+.auth-nav-svg {
+margin-right: 10px;
+fill: currentColor;
+}

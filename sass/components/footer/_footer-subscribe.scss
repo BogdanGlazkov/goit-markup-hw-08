@@ -1,0 +1,50 @@
+.fsubscribe {
+    margin-left: 93px;
+}
+
+.fsubscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.fsubscribe-input {
+    width: 358px;
+    height: 50px;
+    margin: 0;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--background-color);
+    background-color: var(--background-secondary-color);
+}
+
+.fsubscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+    outline: transparent;
+    cursor: pointer;
+}
+
+.fsubscribe-button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.fsubscribe-button-icon {
+    width: 24px;
+    height: 24px;
+}

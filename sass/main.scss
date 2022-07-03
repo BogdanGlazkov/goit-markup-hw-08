@@ -1,0 +1,30 @@
+// Utils
+@import "./utils/vars";
+
+// Header and footer
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/site-nav";
+@import "./components/header/auth-nav";
+@import "./components/footer/footer";
+@import "./components/footer/footer-socials";
+@import "./components/footer/footer-subscribe";
+
+// Main page
+@import "./components/main-page/layout";
+@import "./components/main-page/hero";
+@import "./components/main-page/features";
+@import "./components/main-page/work";
+@import "./components/main-page/team";
+@import "./components/main-page/clients";
+
+// Portfolio page
+@import "./components/portfolio-page/layout";
+@import "./components/portfolio-page/filter";
+@import "./components/portfolio-page/card";
+
+// Modal window
+@import "./components/modal-window/backdrop";
+@import "./components/modal-window/modal";
+@import "./components/modal-window/form";
+@import "./components/modal-window/checkbox";

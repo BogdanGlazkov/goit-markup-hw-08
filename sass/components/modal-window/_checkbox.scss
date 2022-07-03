@@ -1,0 +1,40 @@
+.modal-form-agreement {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.modal-form-agreement>a {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.modal-form-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+
+    .modal-form-agree:checked+& {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        transition: border-color var(--transition),
+        background-color var(--transition);
+    }
+}
+
+.modal-checkbox-icon {
+    fill: var(--background-color);
+}
