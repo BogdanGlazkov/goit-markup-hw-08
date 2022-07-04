@@ -1,0 +1,49 @@
+// Mobile menu
+.mmenu {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mmenu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mmenu-button-close {
+    display: none;
+
+    .mmenu-button.is-open & {
+        display: block;
+    }
+}
+
+.mmenu-button-burger {
+    .mmenu-button.is-open & {
+        display: none;
+    }
+}
+
+.mmenu-container {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    padding: 20px;
+
+    &.is-open {
+        display: block;
+    }
+
+    // display: flex;
+    // justify-content: space-between;
+    // flex-direction: column;
+}
