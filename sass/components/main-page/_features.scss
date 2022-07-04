@@ -2,8 +2,24 @@
     display: none;
 }
 
+.features__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .features__item {
-    width: 270px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .features__card {
@@ -11,6 +27,7 @@
     align-items: center;
     justify-content: center;
     height: 120px;
+    width: 100%;
     margin-bottom: 30px;
     background-color: var(--background-box-color);
     border-radius: 4px;

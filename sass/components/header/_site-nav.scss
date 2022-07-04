@@ -1,28 +1,32 @@
 .site-nav {
-    margin-left: 93px;
-& li {
-        display: flex;
-        height: 80px;
-        align-items: center;
-    }
-& li+li {
-    margin-left: 50px;
-}
-}
+    display: none;
 
-.site-nav {
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-left: 93px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-
+    }
 
 & a {
     color: currentColor;
     transition: color var(--transition);
+    }
 }
+
+.site-nav {
+    & li {
+        display: flex;
+        height: 80px;
+        align-items: center;
+    }
+
+    & li+li {
+        margin-left: 50px;
+    }
 }
 
 .site-nav {

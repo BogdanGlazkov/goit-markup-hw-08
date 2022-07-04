@@ -1,5 +1,4 @@
 .footer {
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
@@ -8,19 +7,42 @@
 
 .footer-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    }
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-footer {
     display: flex;
+    justify-content: center;
     color: var(--background-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-}
+
+    @media screen and (min-width: 1200px) {
+        justify-content: left;
+        }
+    }
 
 .address {
     margin-top: 20px;
+}
+
+.address>ul>li {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-address {

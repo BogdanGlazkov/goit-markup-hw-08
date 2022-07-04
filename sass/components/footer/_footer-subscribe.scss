@@ -1,16 +1,16 @@
 .fsubscribe {
-    margin-left: 93px;
 }
 
 .fsubscribe-form {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 570px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .fsubscribe-input {
-    width: 358px;
+    max-width: 358px;
     height: 50px;
     margin: 0;
     padding: 15px 16px;

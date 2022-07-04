@@ -14,15 +14,20 @@
     background-size: cover;
 }
 
+.hero__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hero__title {
-    width: 696px;
-    text-align: center;
-    margin: 0 0 30px;
+    display: block;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    margin-bottom: 30px;
 
-    flex-wrap: wrap;
     color: var(--background-color);
     font-weight: 900;
     font-size: 44px;
