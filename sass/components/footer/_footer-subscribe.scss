@@ -1,5 +1,3 @@
-.fsubscribe {
-}
 
 .fsubscribe-form {
     display: flex;
@@ -7,10 +5,27 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+    }
+}
+
+.fsubscribe-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 12px;
+    }
 }
 
 .fsubscribe-input {
-    max-width: 358px;
+    width: 358px;
     height: 50px;
     margin: 0;
     padding: 15px 16px;
@@ -19,7 +34,11 @@
     border-radius: 4px;
     color: var(--background-color);
     background-color: var(--background-secondary-color);
-}
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+            }
+    }
 
 .fsubscribe-button {
     display: flex;

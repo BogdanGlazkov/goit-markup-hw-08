@@ -6,12 +6,28 @@
 }
 
 .mmenu-button {
+    position: fixed;
+    top: 22px;
+    right: 25px;
     display: inline-flex;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
     padding: 0;
+    z-index: 100;
+
     border: none;
     background-color: transparent;
+    color: var(--title-text-color);
     cursor: pointer;
+    transition: color var(--transition);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .mmenu-button-close {
@@ -28,22 +44,83 @@
     }
 }
 
+.mmenu-button-icon {
+    fill: currentColor;
+}
+
 .mmenu-container {
     display: none;
 
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background-color: aqua;
-    padding: 20px;
+    height: 100%;
+    padding: 48px 40px;
+    z-index: 10;
+
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+}
 
-    // display: flex;
-    // justify-content: space-between;
-    // flex-direction: column;
+.mmenu-container-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mmenu-link>a {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--title-text-color);
+}
+
+.mmenu-current>a {
+    color: var(--accent-color);
+}
+
+.mmenu-tel {
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+.mmenu-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.mmenu-socials {
+    display: flex;
+    gap: 20px;
+    margin-top: 64px;
+    margin-bottom: 0;
+}
+
+.mmenu-socials-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--accent-color);
 }

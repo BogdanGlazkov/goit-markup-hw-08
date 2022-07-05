@@ -68,17 +68,37 @@
 						</svg>
 					</button>
 					<div class="mmenu-container" id="mmenu-container" data-menu>
-					<ul class="">
-						<li class="link">
-							<a href="./">Студия</a>
-						</li>
-						<li class="link">
-							<a href="./portfolio.html">Портфолио</a>
-						</li>
-						<li class="link">
-							<a href="">Контакты</a>
-						</li>
-					</ul>
+						<ul class="mmenu-nav">
+							<li class="mmenu-link mmenu-current">
+								<a href="./">Студия</a>
+							</li>
+							<li class="mmenu-link">
+								<a href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="mmenu-link">
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+						<div class="mmenu-container-lower">
+						<ul class="mmenu-contacts">
+							<li class="mmenu-tel">+38 096 111 11 11</li>
+							<li class="mmenu-mail">info@devstudio.com</li>
+						</ul>
+						<ul class="mmenu-socials">
+							<li>
+								<a class="mmenu-socials-link" href="">Instagram</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">Twitter</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">Facebook</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -150,19 +170,37 @@
 					<h2 class="work__title section__title">Чем мы занимаемся</h2>
 					<ul class="work__list">
 						<li class="work__thumb">
-							<img class="work__picture" src="./images/box1.jpg" width="370" height="294" alt="box1" />
+							<img class="work__picture" 
+							srcset="./images/box1_370.jpg 370w,
+							./images/box1@2x_740.jpg 740w"
+							sizes="(min-width: 1200px) 370px, 100vw"
+							src="./images/box1_370.jpg" 
+							width="370" height="294" alt="box1"
+							/>
 							<div class="work__description">
 								<p class="work__text">Десктопные приложения</p>
 							</div>
 						</li>
 						<li class="work__thumb">
-							<img class="work__picture" src="./images/box2.jpg" width="370" height="294" alt="box2" />
+							<img class="work__picture" 
+							srcset="./images/box2_370.jpg 370w,
+							./images/box2@2x_740.jpg 740w"
+							sizes="(min-width: 1200px) 370px, 100vw"
+							src="./images/box2_370.jpg" 
+							width="370" height="294" alt="box1"
+							/>
 							<div class="work__description">
 								<p class="work__text">Мобильные приложения</p>
 							</div>
 						</li>
 						<li class="work__thumb">
-							<img class="work__picture" src="./images/box3.jpg" width="370" height="294" alt="box3" />
+							<img class="work__picture" 
+							srcset="./images/box3_370.jpg 370w,
+							./images/box3@2x_740.jpg 740w"
+							sizes="(min-width: 1200px) 370px, 100vw"
+							src="./images/box3_370.jpg" 
+							width="370" height="294" alt="box1"
+							/>
 							<div class="work__description">
 								<p class="work__text">Дизайнерские решения</p>
 							</div>
@@ -177,7 +215,18 @@
 					<h2 class="team__title section__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="card">
-							<img class="card__photo" src="./images/teamcard1.jpg" width="270" alt="teamcard1" />
+							<img class="card__photo" 
+							srcset="./images/teamcard1_270.jpg 270w,
+							./images/teamcard1_354.jpg 354w,
+							./images/teamcard1_450.jpg 450w,
+							./images/teamcard1_540.jpg 540w,
+							./images/teamcard1_708.jpg 708w,
+							./images/teamcard1_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+							src="./images/teamcard1_270.jpg" 
+							width="450" alt="teamcard1"
+							/>
 							<div class="card__text">
 								<h3 class="card__name">Игорь Демьяненко</h3>
 								<p class="card__position">Product Designer</p>
@@ -214,7 +263,18 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__photo" src="./images/teamcard2.jpg" width="270" alt="teamcard2" />
+							<img class="card__photo" 
+							srcset="./images/teamcard2_270.jpg 270w,
+							./images/teamcard2_354.jpg 354w,
+							./images/teamcard2_450.jpg 450w,
+							./images/teamcard2_540.jpg 540w,
+							./images/teamcard2_708.jpg 708w,
+							./images/teamcard2_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+							src="./images/teamcard2_270.jpg" 
+							width="450" alt="teamcard2"
+							/>
 							<div class="card__text">
 								<h3 class="card__name">Ольга Репина</h3>
 								<p class="card__position">Frontend Developer</p>
@@ -251,7 +311,18 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__photo" src="./images/teamcard3.jpg" width="270" alt="teamcard3" />
+							<img class="card__photo" 
+							srcset="./images/teamcard3_270.jpg 270w,
+							./images/teamcard3_354.jpg 354w,
+							./images/teamcard3_450.jpg 450w,
+							./images/teamcard3_540.jpg 540w,
+							./images/teamcard3_708.jpg 708w,
+							./images/teamcard3_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+							src="./images/teamcard3_270.jpg" 
+							width="450" alt="teamcard3"
+							/>
 							<div class="card__text">
 								<h3 class="card__name">Николай Тарасов</h3>
 								<p class="card__position">Marketing</p>
@@ -288,7 +359,18 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__photo" src="./images/teamcard4.jpg" width="270" alt="teamcard4" />
+							<img class="card__photo" 
+							srcset="./images/teamcard4_270.jpg 270w,
+							./images/teamcard4_354.jpg 354w,
+							./images/teamcard4_450.jpg 450w,
+							./images/teamcard4_540.jpg 540w,
+							./images/teamcard4_708.jpg 708w,
+							./images/teamcard4_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+							src="./images/teamcard4_270.jpg" 
+							width="450" alt="teamcard4"
+							/>
 							<div class="card__text">
 								<h3 class="card__name">Михаил Ермаков</h3>
 								<p class="card__position">UI Designer</p>
@@ -330,7 +412,7 @@
 
 			<!-- Постоянные клиенты -->
 			<section class="clients section">
-				<div class="container">
+				<div class="clients-container container">
 					<h2 class="clients__title section__title">Постоянные клиенты</h2>
 					<ul class="clients__list">
 						<li class="clients__item">
@@ -448,16 +530,18 @@
 				<div class="fsubscribe">
 						<form class="fsubscribe-form">
 							<h2 class="footer-title">Подпишитесь на рассылку</h2>
+							<div class="fsubscribe-field">
 							<label for="subscribe">
 							<input class="fsubscribe-input" type="email" name="subscribe" id="email" placeholder="E-mail" />
 							</label>
-							<button class="fsubscribe-button" type="submit">
+							<button class="fsubscribe-button" id="subscribe" type="submit">
 								<span class="fsubscribe-button-text">Подписаться</span>
 								<div class="fsubscribe-button-icon">
 									<svg class="fsocials-icon" width="24" height="24">
 										<use href="./images/icons.svg#icon-form-send"></use>
 									</svg>
 							</button>
+							</div>
 						</form>
 					</div>
 				</div>

@@ -1,6 +1,10 @@
 .team {
-    padding-top: 94px;
+    padding-top: 60px;
     background-color: var(--background-box-color);
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    }
 }
 
 .card {
@@ -16,6 +20,11 @@
     @media screen and (min-width: 1200px) {
         width: 270px;
     }
+}
+
+.card__photo {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card__text {

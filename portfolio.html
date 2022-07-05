@@ -18,6 +18,7 @@
 
 	<body>
 		<!-- Header -->
+		<!-- Header -->
 		<header class="header">
 			<div class="container header-container">
 				<div class="header-logo">
@@ -53,6 +54,55 @@
 						+38 096 111 11 11
 					</a>
 				</div>
+
+			<!-- Mobile menu -->
+				<div class="mmenu">
+					<button class="mmenu-button" 
+						type="button" aria-expanded="false" 
+						aria-controls="mmenu-container"
+						data-menu-button>
+						<svg class="mmenu-button-icon" 
+							width="18" 
+							height="18" 
+							aria-label="Переключатель мобильного меню">
+							<use class="mmenu-button-close" href="./images/icons.svg#icon-burger-close"></use>
+							<use class="mmenu-button-burger" href="./images/icons.svg#icon-burger-menu"></use>
+						</svg>
+					</button>
+					<div class="mmenu-container" id="mmenu-container" data-menu>
+						<ul class="mmenu-nav">
+							<li class="mmenu-link">
+								<a href="./">Студия</a>
+							</li>
+							<li class="mmenu-link mmenu-current">
+								<a href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="mmenu-link">
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+						<div class="mmenu-container-lower">
+						<ul class="mmenu-contacts">
+							<li class="mmenu-tel">+38 096 111 11 11</li>
+							<li class="mmenu-mail">info@devstudio.com</li>
+						</ul>
+						<ul class="mmenu-socials">
+							<li>
+								<a class="mmenu-socials-link" href="">Instagram</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">Twitter</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">Facebook</a>
+							</li>
+							<li>
+								<a class="mmenu-socials-link" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -74,7 +124,18 @@
 					<ul class="portfolio-project">
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio1.jpg" width="370" alt="Технокряк" />
+							<img 
+							srcset="./images/portfolio1_354.jpg 354w,
+							./images/portfolio1_370.jpg 370w,
+							./images/portfolio1_450.jpg 450w,
+							./images/portfolio1_708.jpg 708w,
+							./images/portfolio1_740.jpg 740w,
+							./images/portfolio1_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio1_354.jpg" 
+								width="450" alt="Технокряк" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -89,7 +150,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio2.jpg" width="370" alt="Постер New Orlean vs Golden Star" />
+							<img 
+							srcset="./images/portfolio2_354.jpg 354w,
+							./images/portfolio2_370.jpg 370w,
+							./images/portfolio2_450.jpg 450w,
+							./images/portfolio2_708.jpg 708w,
+							./images/portfolio2_740.jpg 740w,
+							./images/portfolio2_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio2_354.jpg" 
+								width="450" alt="Постер New Orlean vs Golden Star" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -104,7 +176,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio3.jpg" width="370" alt="Ресторан Seafood" />
+							<img 
+							srcset="./images/portfolio3_354.jpg 354w,
+							./images/portfolio3_370.jpg 370w,
+							./images/portfolio3_450.jpg 450w,
+							./images/portfolio3_708.jpg 708w,
+							./images/portfolio3_740.jpg 740w,
+							./images/portfolio3_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio3_354.jpg" 
+								width="450" alt="Ресторан Seafood" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -119,7 +202,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio4.jpg" width="370" alt="Проект Prime" />
+							<img 
+							srcset="./images/portfolio4_354.jpg 354w,
+							./images/portfolio4_370.jpg 370w,
+							./images/portfolio4_450.jpg 450w,
+							./images/portfolio4_708.jpg 708w,
+							./images/portfolio4_740.jpg 740w,
+							./images/portfolio4_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio4_354.jpg" 
+								width="450" alt="Проект Prime" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -134,7 +228,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio5.jpg" width="370" alt="Проект Boxes" />
+							<img 
+							srcset="./images/portfolio5_354.jpg 354w,
+							./images/portfolio5_370.jpg 370w,
+							./images/portfolio5_450.jpg 450w,
+							./images/portfolio5_708.jpg 708w,
+							./images/portfolio5_740.jpg 740w,
+							./images/portfolio5_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio5_354.jpg" 
+								width="450" alt="Проект Boxes" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -149,7 +254,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio6.jpg" width="370" alt="Inspiration has no Borders" />
+							<img 
+							srcset="./images/portfolio6_354.jpg 354w,
+							./images/portfolio6_370.jpg 370w,
+							./images/portfolio6_450.jpg 450w,
+							./images/portfolio6_708.jpg 708w,
+							./images/portfolio6_740.jpg 740w,
+							./images/portfolio6_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio6_354.jpg" 
+								width="450" alt="Inspiration has no Borders" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -164,7 +280,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio7.jpg" width="370" alt="Издание Limited Edition" />
+							<img 
+							srcset="./images/portfolio7_354.jpg 354w,
+							./images/portfolio7_370.jpg 370w,
+							./images/portfolio7_450.jpg 450w,
+							./images/portfolio7_708.jpg 708w,
+							./images/portfolio7_740.jpg 740w,
+							./images/portfolio7_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio7_354.jpg" 
+								width="450" alt="Издание Limited Edition" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -179,7 +306,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio8.jpg" width="370" alt="Проект LAB" />
+							<img 
+							srcset="./images/portfolio8_354.jpg 354w,
+							./images/portfolio8_370.jpg 370w,
+							./images/portfolio8_450.jpg 450w,
+							./images/portfolio8_708.jpg 708w,
+							./images/portfolio8_740.jpg 740w,
+							./images/portfolio8_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio8_354.jpg" 
+								width="450" alt="Проект LAB" 
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -194,7 +332,18 @@
 						</li>
 						<li class="portfolio-card">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio9.jpg" width="370" alt="Growing Business" />
+							<img 
+							srcset="./images/portfolio9_354.jpg 354w,
+							./images/portfolio9_370.jpg 370w,
+							./images/portfolio9_450.jpg 450w,
+							./images/portfolio9_708.jpg 708w,
+							./images/portfolio9_740.jpg 740w,
+							./images/portfolio9_900.jpg 900w,
+							"
+							sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+								src="./images/portfolio9_354.jpg" 
+								width="450" alt="Growing Business"
+								/>
 								<div class="portfolio-thumb-overlay">
 									<p>
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -278,18 +427,20 @@
 				</div>
 					<!-- Footer subscribe -->
 				<div class="fsubscribe">
-					<h2 class="footer-title">Подпишитесь на рассылку</h2>
 						<form class="fsubscribe-form">
-						<label for="email">
-						<input class="fsubscribe-input" type="email" name="email" id="email" placeholder="E-mail" />
-						</label>
-						<button class="fsubscribe-button" type="submit">
-							<span class="fsubscribe-button-text">Подписаться</span>
-							<div class="fsubscribe-button-icon">
-								<svg class="fsocials-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-form-send"></use>
-								</svg>
-						</button>
+							<h2 class="footer-title">Подпишитесь на рассылку</h2>
+							<div class="fsubscribe-field">
+							<label for="subscribe">
+							<input class="fsubscribe-input" type="email" name="subscribe" id="email" placeholder="E-mail" />
+							</label>
+							<button class="fsubscribe-button" id="subscribe" type="submit">
+								<span class="fsubscribe-button-text">Подписаться</span>
+								<div class="fsubscribe-button-icon">
+									<svg class="fsocials-icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-form-send"></use>
+									</svg>
+							</button>
+							</div>
 						</form>
 					</div>
 				</div>
