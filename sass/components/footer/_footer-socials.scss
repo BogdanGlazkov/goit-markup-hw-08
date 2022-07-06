@@ -11,6 +11,10 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
 }
 
 .fsocials-list {
