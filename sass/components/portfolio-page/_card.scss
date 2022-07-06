@@ -1,4 +1,6 @@
 .portfolio-card {
+    border: 1px solid #EEEEEE;
+    border-top: none;
     box-shadow: none;
     transition: box-shadow var(--transition);
     width: 100%;
@@ -66,8 +68,6 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
-    border-top: none;
 }
 
 .project-name {
